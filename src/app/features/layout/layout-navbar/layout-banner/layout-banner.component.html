@@ -1,0 +1,19 @@
+@if (isBannerVisible) {
+	<div class="bg-primary-500 p-2 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
+		<div class="font-bold mr-8">🔥 Hot Deals!</div>
+		<div class="align-items-center hidden lg:flex">
+			{{ 'main.greeting' | transloco }}
+		</div>
+		<!-- <a class="flex align-items-center ml-2 mr-8">
+			<a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
+		</a> -->
+		<a
+			pRipple
+			class="flex align-items-center no-underline justify-content-center border-circle hover:text-primary-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150"
+			style="width: 2rem; height: 2rem"
+			(click)="onClose()">
+			<i class="pi pi-times"></i>
+		</a>
+
+	</div>
+}

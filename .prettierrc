@@ -1,0 +1,27 @@
+{
+	"semi": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"printWidth": 140,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"bracketSpacing": true,
+	"arrowParens": "avoid",
+	"endOfLine": "auto",
+	"htmlWhitespaceSensitivity": "strict",
+	"overrides": [
+		{
+			"files": "*.component.html",
+			"options": {
+				"printWidth": 140,
+				"bracketSameLine": true
+			}
+		},
+		{
+			"files": "*.scss",
+			"options": {
+				"singleQuote": false
+			}
+		}
+	]
+}

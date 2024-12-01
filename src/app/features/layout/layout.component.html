@@ -1,0 +1,9 @@
+<!-- TODO if we are on an admin page don't show the navbar and footer -->
+<app-layout-navbar></app-layout-navbar>
+
+<div
+	[ngClass]="{
+		'surface-section h-full border-round-top-2xl overflow-hidden': !isAdminPage
+	}">
+	<ng-content></ng-content>
+</div>
